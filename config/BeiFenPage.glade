@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window1">
+    <property name="width_request">360</property>
+    <property name="height_request">170</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">备份与恢复</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">50</property>
+    <property name="default_height">50</property>
+    <property name="icon">..\\image\\icon.png</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <object class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkFileChooserButton" id="filechooserbutton1">
+            <property name="width_request">132</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="action">select-folder</property>
+            <property name="title" translatable="yes">选择备份地址</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">31</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="filechooserbutton2">
+            <property name="width_request">132</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="action">select-folder</property>
+            <property name="create_folders">False</property>
+            <property name="title" translatable="yes">选择恢复地址</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox1">
+            <property name="width_request">50</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="visible_window">False</property>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stock">gtk-missing-image</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">270</property>
+            <property name="y">26</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox2">
+            <property name="width_request">50</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="visible_window">False</property>
+            <child>
+              <object class="GtkImage" id="image2">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stock">gtk-missing-image</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">270</property>
+            <property name="y">93</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="image3">
+            <property name="width_request">80</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">26</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="image4">
+            <property name="width_request">80</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">98</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

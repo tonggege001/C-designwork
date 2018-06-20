@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window1">
+    <property name="width_request">850</property>
+    <property name="height_request">550</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">统计</property>
+    <property name="window_position">center</property>
+    <property name="icon">..\\image\\icon.png</property>
+    <child>
+      <object class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">200</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="yalign">0.4699999988079071</property>
+            <property name="label" translatable="yes">参与创新活动的比例</property>
+            <attributes>
+              <attribute name="size" value="100"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">320</property>
+            <property name="y">21</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="checkbutton1">
+            <property name="label" translatable="yes">指定具体年份</property>
+            <property name="width_request">104</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">152</property>
+            <property name="y">73</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="comboboxtext1">
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="row_span_column">0</property>
+            <items>
+              <item translatable="yes">2003</item>
+              <item translatable="yes">2004</item>
+              <item translatable="yes">2005</item>
+              <item translatable="yes">2006</item>
+              <item translatable="yes">2007</item>
+              <item translatable="yes">2008</item>
+              <item translatable="yes">2009</item>
+              <item translatable="yes">2010</item>
+              <item translatable="yes">2011</item>
+              <item translatable="yes">2012</item>
+              <item translatable="yes">2013</item>
+              <item translatable="yes">2014</item>
+              <item translatable="yes">2015</item>
+              <item translatable="yes">2016</item>
+              <item translatable="yes">2017</item>
+            </items>
+          </object>
+          <packing>
+            <property name="x">320</property>
+            <property name="y">76</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="comboboxtext2">
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="row_span_column">0</property>
+            <items>
+              <item translatable="yes">2003</item>
+              <item translatable="yes">2004</item>
+              <item translatable="yes">2005</item>
+              <item translatable="yes">2006</item>
+              <item translatable="yes">2007</item>
+              <item translatable="yes">2008</item>
+              <item translatable="yes">2009</item>
+              <item translatable="yes">2010</item>
+              <item translatable="yes">2011</item>
+              <item translatable="yes">2012</item>
+              <item translatable="yes">2013</item>
+              <item translatable="yes">2014</item>
+              <item translatable="yes">2015</item>
+              <item translatable="yes">2016</item>
+              <item translatable="yes">2017</item>
+            </items>
+          </object>
+          <packing>
+            <property name="x">513</property>
+            <property name="y">76</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHSeparator" id="hseparator1">
+            <property name="width_request">850</property>
+            <property name="height_request">14</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="y">112</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow1">
+            <property name="width_request">850</property>
+            <property name="height_request">423</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="y">125</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox1">
+            <property name="width_request">100</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="visible_window">False</property>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stock">gtk-missing-image</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">640</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label2">
+            <property name="width_request">80</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">——</property>
+          </object>
+          <packing>
+            <property name="x">430</property>
+            <property name="y">76</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
